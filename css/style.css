@@ -1,0 +1,3345 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@media (max-width: 321px) {
+  .header {
+    margin-bottom: 60px;
+    width: 320px;
+  }
+
+  .header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 17px;
+  }
+
+  .logo-menu-button {
+    padding-top: 11px;
+    padding-bottom: 64px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo-img {
+    width: 216px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .header-slider {
+    text-align: center;
+  }
+
+  .header-img {
+    width: 218px;
+    margin-bottom: 18px;
+  }
+
+  .header-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #2E3A59;
+    font-family: "Roboto";
+  }
+
+  .slider {
+    width:300px;
+    display:block;
+    margin:0 auto;
+  }
+
+  .header-slider__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    margin-bottom: 22px;
+  }
+
+ .header-slider__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+  .slider-arrow__left,
+  .slider-arrow__right{
+    position: absolute;
+    bottom: -18%;
+    width: 10px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .slider-arrow__left {
+    left: 14%;
+  }
+
+  .slider-arrow__right{
+    right: 14%;
+  }
+
+  .header-slider-big {
+    display: none;
+  }
+
+  .main-container {
+    display: inline-block;
+    max-width: 320px;
+  }
+
+  .main-faq {
+    background-color: #F8FBFF;
+    width: 100%;
+    padding: 20px 18px 29px 18px; 
+  }
+
+  .main-faq__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+     width: 250px;
+     margin-right: auto;
+    margin-left: auto;
+     text-align: center;
+  }
+
+  .main-faq__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 280px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-faq__list {
+    padding: 0;
+  }
+
+  .main-faq__list-item {
+    list-style-type: none;
+    margin-bottom: 14px;
+  }
+
+  .main-faq__list-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E7EBF0;
+    margin-top: 7px;
+  }
+
+  .main-faq__list-item:last-child::after {
+    content: "";
+    display: none;
+  }
+
+  .main-faq__list-header {
+   display: block;
+   width: 100%;
+  }
+
+  .main-faq__list-header p {
+    display: block;
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 269px;
+    vertical-align: top;
+    margin: 0;
+  }
+
+  .main-faq__list-header svg {
+    display: block;
+    display: inline-block;
+    width: 19px;
+    vertical-align: top;
+  }
+
+ .main-faq__list-item.is-opened .faq__list-item-close {
+   -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
+
+ .main-faq__list-content {
+    display: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #2E3A59;
+    width: 240px;
+    line-height: 18px;
+ }
+
+  .main-review {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 20px 18px 29px 18px; 
+  }
+
+  .main-review__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-review__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-review__item-big {
+    border-radius: 32px;
+    width: 288px;
+    padding: 40px 16px 15px 16px;
+    position: relative;
+    margin-top: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+  }
+
+  .main-review__item-big img {
+    width: 97px;
+    position: absolute;
+    top: -10%;
+    transform: translateX(95%);
+  }
+
+  .main-review__big-desc {
+    width: 246px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__big-name {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__quote-up {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+
+   .main-review__quote-down {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+
+  .main-review__item-one {
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 20px;
+  }
+
+  .main-review__item-one img {
+    display: inline-block;
+    width: 59px;
+    margin-right: 15px;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+
+  .main-review__item-one div {
+    display: inline-block;
+    width: 180px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__bold {
+     font-weight: 700;
+  }
+
+  .main-review__item-two {
+    width: 100%;
+    margin-top: 0;
+    padding-left: 20px;
+  }
+
+  .main-review__item-two img {
+    display: inline-block;
+    width: 59px;
+    margin-right: 50px;
+    margin-top: 10px;
+    float: right;
+  }
+
+  .main-review__item-two div {
+    display: inline-block;
+    width: 180px;
+    vertical-align: middle;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
+}
+
+@media (min-width: 322px) and (max-width: 376px) {
+  .header {
+    margin-bottom: 60px;
+    width: 375px;
+  }
+
+  .header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    padding-left: 15px;
+    padding-right: 17px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+  }
+
+  .logo-menu-button {
+    padding-top: 11px;
+    padding-bottom: 64px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo-img {
+    width: 216px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .header-slider {
+    text-align: center;
+  }
+
+  .header-img {
+    width: 218px;
+    margin-bottom: 18px;
+  }
+
+  .header-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #2E3A59;
+    font-family: "Roboto";
+  }
+
+  .slider {
+    width: 300px;
+    display:block;
+    margin:0 auto;
+  }
+
+  .header-slider__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    margin-bottom: 22px;
+  }
+
+ .header-slider__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+  .slider-arrow__left,
+  .slider-arrow__right{
+    position: absolute;
+    bottom: -18%;
+    width: 10px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .slider-arrow__left {
+    left: 14%;
+  }
+
+  .slider-arrow__right{
+    right: 14%;
+  }
+
+  .header-slider-big {
+    display: none;
+  }
+
+  .main-container {
+    display: inline-block;
+   max-width: 375px;
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .main-faq {
+    background-color: #F8FBFF;
+    width: 375px;
+    padding: 20px 18px 29px 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .main-faq__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+     width: 250px;
+     margin-left: 30px;
+     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-faq__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__list {
+    padding: 20px;
+  }
+
+  .main-faq__list-item {
+    list-style-type: none;
+    margin-bottom: 14px;
+  }
+
+  .main-faq__list-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E7EBF0;
+    margin-top: 7px;
+  }
+
+  .main-faq__list-item:last-child::after {
+    content: "";
+    display: none;
+  }
+
+  .main-faq__list-header {
+   display: block;
+   width: 375px;
+   margin: 0;
+  }
+
+  .main-faq__list-header p {
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 270px;
+    vertical-align: top;
+    margin: 0;
+  }
+
+  .main-faq__list-header svg {
+    display: block;
+    display: inline-block;
+    width: 19px;
+    vertical-align: top;
+  }
+
+ .main-faq__list-item.is-opened .faq__list-item-close {
+   -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
+
+ .main-faq__list-content {
+    display: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #2E3A59;
+    width: 240px;
+    line-height: 18px;
+ }
+
+  .main-review {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 20px 18px 29px 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .main-review__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .main-review__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-review__item-big {
+    border-radius: 32px;
+    width: 350px;
+    padding: 40px 16px 15px 16px;
+    position: relative;
+    margin-top: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-review__item-big img {
+    width: 97px;
+    position: absolute;
+    top: -10%;
+    transform: translateX(95%);
+  }
+
+  .main-review__big-desc {
+    width: 246px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__big-name {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__quote-up {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+
+   .main-review__quote-down {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+
+  .main-review__item-one {
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 20px;
+  }
+
+  .main-review__item-one img {
+    display: inline-block;
+    width: 59px;
+    margin-right: 15px;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+
+  .main-review__item-one div {
+    display: inline-block;
+    width: 180px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__bold {
+     font-weight: 700;
+  }
+
+  .main-review__item-two {
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 20px;
+  }
+
+  .main-review__item-two  img {
+    display: inline-block;
+    width: 59px;
+    margin-right: 100px;
+    margin-top: 20px;
+    float: right;
+  }
+
+  .main-review__item-two div {
+    display: inline-block;
+    width: 180px;
+    vertical-align: middle;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+@media (min-width: 377px) and (max-width: 415px) {
+  .header {
+    margin-bottom: 60px;
+    width: 415px;
+  }
+
+  .header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 415px;
+    padding-left: 15px;
+    padding-right: 17px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+  }
+
+  .logo-menu-button {
+    padding-top: 11px;
+    padding-bottom: 64px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo-img {
+    width: 216px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .header-slider {
+    text-align: center;
+  }
+
+  .header-img {
+    width: 218px;
+    margin-bottom: 18px;
+  }
+
+  .header-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #2E3A59;
+    font-family: "Roboto";
+  }
+
+  .slider {
+    width: 300px;
+    display:block;
+    margin:0 auto;
+  }
+
+  .header-slider__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    margin-bottom: 22px;
+  }
+
+ .header-slider__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+  .slider-arrow__left,
+  .slider-arrow__right{
+    position: absolute;
+    bottom: -18%;
+    width: 10px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .slider-arrow__left {
+    left: 14%;
+  }
+
+  .slider-arrow__right{
+    right: 14%;
+  }
+
+  .header-slider-big {
+    display: none;
+  }
+
+  .main-container {
+    display: inline-block;
+   max-width: 415px;
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .main-faq {
+    background-color: #F8FBFF;
+    width: 415px;
+    padding: 20px 18px 29px 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .main-faq__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+     width: 250px;
+     margin-left: 30px;
+     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-faq__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 280px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__list {
+    padding: 20px;
+  }
+
+  .main-faq__list-item {
+    list-style-type: none;
+    margin-bottom: 14px;
+  }
+
+  .main-faq__list-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E7EBF0;
+    margin-top: 7px;
+  }
+
+  .main-faq__list-item:last-child::after {
+    content: "";
+    display: none;
+  }
+
+  .main-faq__list-header {
+   display: block;
+   width: 320px;
+   margin: 0;
+  }
+
+  .main-faq__list-header p {
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 270px;
+    vertical-align: top;
+    margin: 0;
+  }
+
+  .main-faq__list-header svg {
+    display: block;
+    display: inline-block;
+    width: 19px;
+    vertical-align: top;
+  }
+
+ .main-faq__list-item.is-opened .faq__list-item-close {
+   -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
+
+ .main-faq__list-content {
+    display: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #2E3A59;
+    width: 240px;
+    line-height: 18px;
+ }
+
+  .main-review {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 20px 18px 29px 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .main-review__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .main-review__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-review__item-big {
+    border-radius: 32px;
+    width: 350px;
+    padding: 40px 16px 15px 16px;
+    position: relative;
+    margin-top: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-review__item-big img {
+    width: 97px;
+    position: absolute;
+    top: -10%;
+    transform: translateX(95%);
+  }
+
+  .main-review__big-desc {
+    width: 246px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__big-name {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__quote-up {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+
+   .main-review__quote-down {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+
+  .main-review__item-one {
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 20px;
+  }
+
+  .main-review__item-one img {
+    display: inline-block;
+    width: 59px;
+    margin-right: 15px;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+
+  .main-review__item-one div {
+    display: inline-block;
+    width: 180px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__bold {
+     font-weight: 700;
+  }
+
+  .main-review__item-two {
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 20px;
+  }
+
+  .main-review__item-two  img {
+    display: inline-block;
+    width: 59px;
+    margin-right: 100px;
+    margin-top: 20px;
+    float: right;
+  }
+
+  .main-review__item-two div {
+    display: inline-block;
+    width: 180px;
+    vertical-align: middle;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+@media (min-width: 416px) and (max-width: 769px) {
+  .header {
+    margin-bottom: 60px;
+    width: 769px;
+  }
+
+  .header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 769px;
+    padding-left: 15px;
+    padding-right: 17px;
+  }
+
+  .logo-menu-button {
+    padding-top: 11px;
+    padding-bottom: 64px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo-img {
+    width: 216px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .header-slider {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+     width: 100%;
+  }
+
+  .header-img {
+    width: 218px;
+    margin-bottom: 18px;
+  }
+
+  .header-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #2E3A59;
+    font-family: "Roboto";
+    text-align: center;
+  }
+
+  .slider {
+    width: 300px;
+    display:block;
+    margin:0 auto;
+  }
+
+  .header-slider__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    margin-bottom: 22px;
+  }
+
+ .header-slider__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+  .slider-arrow__left,
+  .slider-arrow__right{
+    position: absolute;
+    bottom: -18%;
+    width: 10px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .slider-arrow__left {
+    left: 14%;
+  }
+
+  .slider-arrow__right{
+    right: 14%;
+  }
+
+  .header-slider-big {
+    display: none;
+  }
+
+  .main-container {
+    display: inline-block;
+    width: 769px;
+  }
+
+  .main-faq {
+    background-color: #F8FBFF;
+    width: 100%;
+    padding: 20px 18px 29px 18px; 
+  }
+
+  .main-faq__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-faq__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 280px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+
+  .main-faq__list {
+    padding-left: 100px;
+  }
+
+  .main-faq__list-item {
+    list-style-type: none;
+    margin-bottom: 14px;
+  }
+
+  .main-faq__list-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E7EBF0;
+    margin-top: 7px;
+  }
+
+  .main-faq__list-item:last-child::after {
+    content: "";
+    display: none;
+  }
+
+  .main-faq__list-header {
+   display: block;
+   max-width: 769px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+  }
+
+  .main-faq__list-header p {
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 469px;
+    vertical-align: top;
+    margin: 0;
+  }
+
+  .main-faq__list-header svg {
+    display: block;
+    display: inline-block;
+    width: 19px;
+    vertical-align: top;
+  }
+
+ .main-faq__list-item.is-opened .faq__list-item-close {
+   -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
+
+ .main-faq__list-content {
+    display: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #2E3A59;
+    width: 469px;
+    line-height: 18px;
+ }
+
+  .main-review {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 20px 18px 29px 18px; 
+  }
+
+  .main-review__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .main-review__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-review__item-big {
+    border-radius: 32px;
+    width: 350px;
+    padding: 40px 16px 15px 16px;
+    position: relative;
+    margin-top: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-review__item-big img {
+    width: 97px;
+    position: absolute;
+    top: -10%;
+    transform: translateX(95%);
+  }
+
+  .main-review__big-desc {
+    width: 246px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__big-name {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__quote-up {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+
+   .main-review__quote-down {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+
+  .main-review__item {
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 150px;
+  }
+
+  .main-review__item-one {
+    width: 270px;
+    padding-left: 80px;
+    display: inline-block;
+  }
+
+  .main-review__item-one img {
+    display: inline-block;
+    width: 59px;
+    margin-top: 20px;
+    float: right;
+  }
+
+  .main-review__item-one div {
+    display: inline-block;
+    width: 200px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__bold {
+     font-weight: 700;
+  }
+
+  .main-review__item-two {
+    width: 300px;
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .main-review__item-two  img {
+    display: inline-block;
+    width: 59px;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 90px;
+  }
+
+  .main-review__item-two div {
+    display: inline-block;
+    width: 200px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0px;
+  }
+
+  .main-review__item-two div p {
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 770px) and (max-width: 1025px) {
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .header-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    padding-left: 73px;
+    padding-right: 73px;
+  }
+
+  .logo-menu-button {
+    padding-top: 11px;
+    padding-bottom: 64px;
+  }
+
+  .logo {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 59px;
+  }
+
+  .logo-img {
+    width: 216px;
+  }
+
+  .header-menu {
+    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+  }
+
+  .header-menu__list {
+    padding: 0;
+  }
+
+  .header-menu__list-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 44px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #A6ABBD;
+  }
+
+   .header-menu__list-item:last-child {
+    margin-right: 0;
+  }
+
+  .header-menu__list-item a {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 24px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .header-menu__list-item a:hover,
+  .header-menu__list-item a:focus,
+  .header-menu__list-item a:active {
+    background-color: #00C368;
+    border-radius: 8px;
+    padding: 4px 24px;
+    color: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .header-button {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 24px;
+    background-color: #00C368;
+    border: 1px solid #00C368;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 8px;
+    color: #FFFFFF;
+  }
+
+  .header-slider {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .header-img {
+    width: 218px;
+    margin-bottom: 18px;
+  }
+
+  .header-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #2E3A59;
+    font-family: "Roboto";
+  }
+
+  .slider {
+    width: 300px;
+    display:block;
+    margin:0 auto;
+  }
+
+  .header-slider__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    margin-bottom: 22px;
+  }
+
+ .header-slider__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+  .slider-arrow__left,
+  .slider-arrow__right{
+    position: absolute;
+    bottom: -18%;
+    width: 10px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .slider-arrow__left {
+    left: 14%;
+  }
+
+  .slider-arrow__right{
+    right: 14%;
+  }
+
+  .header-slider-big {
+    display: none;
+  }
+
+  .main-container {
+    display: block;
+    width: 1024px;
+    margin-bottom: 560px;
+    font-size: 0;
+  }
+
+  .main-faq {
+    background-color: #F8FBFF;
+    width: 50%;
+    padding: 20px 18px 29px 18px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+    height: 1000px;
+  }
+
+  .main-faq__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-faq__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 280px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+
+  .main-faq__list {
+    padding-left: 20px;
+  }
+
+  .main-faq__list-item {
+    list-style-type: none;
+    margin-bottom: 14px;
+  }
+
+  .main-faq__list-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E7EBF0;
+    margin-top: 7px;
+  }
+
+  .main-faq__list-item:last-child::after {
+    content: "";
+    display: none;
+  }
+
+  .main-faq__list-header {
+   display: block;
+   width: 100%;
+   margin-top: 30px;
+   margin-bottom: 30px;
+  }
+
+  .main-faq__list-header p {
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 369px;
+    vertical-align: top;
+    margin: 0;
+  }
+
+  .main-faq__list-header svg {
+    display: block;
+    display: inline-block;
+    width: 19px;
+    vertical-align: top;
+  }
+
+ .main-faq__list-item.is-opened .faq__list-item-close {
+   -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
+
+ .main-faq__list-content {
+    display: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #2E3A59;
+    width: 369px;
+    line-height: 18px;
+ }
+
+  .main-review {
+    background-color: #F5F5F5;
+    width: 50%;
+    padding: 20px 18px 29px 18px; 
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+    height: 1000px;
+  }
+
+  .main-review__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .main-review__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-review__item-big {
+    border-radius: 32px;
+    width: 350px;
+    padding: 40px 16px 15px 16px;
+    position: relative;
+    margin-top: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-review__item-big img {
+    width: 97px;
+    position: absolute;
+    top: -10%;
+    transform: translateX(95%);
+  }
+
+  .main-review__big-desc {
+    width: 246px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__big-name {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__quote-up {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    fill: #00C368;
+  }
+
+   .main-review__quote-down {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    fill: #00C368;
+  }
+
+  .main-review__item {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .main-review__item-one {
+    width: 100%;
+    padding-left: 5px;
+  }
+
+  .main-review__item-one img {
+    display: inline-block;
+    width: 59px;
+    margin-top: 5px;
+    margin-right: 60px;
+    vertical-align: top;
+    float: right;
+  }
+
+  .main-review__item-one div {
+    display: inline-block;
+    width: 350px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__bold {
+     font-weight: 700;
+  }
+
+  .main-review__item-two {
+    width: 100%;
+    position: relative;
+    margin-left: 5px;
+  }
+
+  .main-review__item-two  img {
+    display: inline-block;
+    width: 59px;
+    margin-top: 5px;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+
+  .main-review__item-two div {
+    display: inline-block;
+    width: 350px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0px;
+  }
+
+  .main-review__item-two div p {
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 1026px) and (max-width: 1201px) {
+  .header {
+    margin-bottom: 60px;
+    width: 1201px;
+  }
+
+  .header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1201px;
+    padding-left: 73px;
+    padding-right: 73px;
+  }
+
+  .logo-menu-button {
+    padding-top: 11px;
+    padding-bottom: 64px;
+  }
+
+  .logo {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 59px;
+  }
+
+  .logo-img {
+    width: 216px;
+  }
+
+  .header-menu {
+    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+  }
+
+  .header-menu__list {
+    padding: 0;
+  }
+
+  .header-menu__list-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 44px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #A6ABBD;
+  }
+
+   .header-menu__list-item:last-child {
+    margin-right: 0;
+  }
+
+  .header-menu__list-item a {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 24px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .header-menu__list-item a:hover,
+  .header-menu__list-item a:focus,
+  .header-menu__list-item a:active {
+    background-color: #00C368;
+    border-radius: 8px;
+    padding: 4px 24px;
+    color: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .header-button {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 24px;
+    background-color: #00C368;
+    border: 1px solid #00C368;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 8px;
+    color: #FFFFFF;
+  }
+
+  .header-slider {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .header-img {
+    width: 218px;
+    margin-bottom: 18px;
+  }
+
+  .header-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #2E3A59;
+    font-family: "Roboto";
+  }
+
+  .slider {
+    width: 300px;
+    display:block;
+    margin:0 auto;
+  }
+
+  .header-slider__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    margin-bottom: 22px;
+  }
+
+ .header-slider__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+  .slider-arrow__left,
+  .slider-arrow__right{
+    position: absolute;
+    bottom: -18%;
+    width: 10px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .slider-arrow__left {
+    left: 14%;
+  }
+
+  .slider-arrow__right{
+    right: 14%;
+  }
+
+  .header-slider-big {
+    display: none;
+  }
+
+  .main-container {
+    display: block;
+    width: 1201px;
+    margin-bottom: 560px;
+    font-size: 0;
+  }
+
+  .main-faq {
+    background-color: #F8FBFF;
+    width: 50%;
+    padding: 20px 18px 29px 18px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+    height: 1000px;
+  }
+
+  .main-faq__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-faq__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 280px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+
+  .main-faq__list {
+    padding-left: 20px;
+  }
+
+  .main-faq__list-item {
+    list-style-type: none;
+    margin-bottom: 14px;
+  }
+
+  .main-faq__list-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E7EBF0;
+    margin-top: 7px;
+  }
+
+  .main-faq__list-item:last-child::after {
+    content: "";
+    display: none;
+  }
+
+  .main-faq__list-header {
+   display: block;
+   width: 100%;
+   margin-top: 30px;
+   margin-bottom: 30px;
+  }
+
+  .main-faq__list-header p {
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 369px;
+    vertical-align: top;
+    margin: 0;
+  }
+
+  .main-faq__list-header svg {
+    display: block;
+    display: inline-block;
+    width: 19px;
+    vertical-align: top;
+  }
+
+ .main-faq__list-item.is-opened .faq__list-item-close {
+   -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
+
+ .main-faq__list-content {
+    display: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #2E3A59;
+    width: 369px;
+    line-height: 18px;
+ }
+
+  .main-review {
+    background-color: #F5F5F5;
+    width: 50%;
+    padding: 20px 18px 29px 18px; 
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+    height: 1000px;
+  }
+
+  .main-review__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .main-review__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-review__item-big {
+    border-radius: 32px;
+    width: 350px;
+    padding: 40px 16px 15px 16px;
+    position: relative;
+    margin-top: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-review__item-big img {
+    width: 97px;
+    position: absolute;
+    top: -10%;
+    transform: translateX(95%);
+  }
+
+  .main-review__big-desc {
+    width: 246px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__big-name {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__quote-up {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    fill: #00C368;
+  }
+
+   .main-review__quote-down {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    fill: #00C368;
+  }
+
+  .main-review__item {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  .main-review__item-one {
+    width: 100%;
+    padding-left: 5px;
+  }
+
+  .main-review__item-one img {
+    display: inline-block;
+    width: 59px;
+    margin-top: 5px;
+    margin-right: 20px;
+    vertical-align: top;
+    float: right;
+  }
+
+  .main-review__item-one div {
+    display: inline-block;
+    width: 350px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__bold {
+     font-weight: 700;
+  }
+
+  .main-review__item-two {
+    width: 100%;
+    position: relative;
+    margin-left: 5px;
+  }
+
+  .main-review__item-two  img {
+    display: inline-block;
+    width: 59px;
+    margin-top: 5px;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+
+  .main-review__item-two div {
+    display: inline-block;
+    width: 350px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0px;
+  }
+
+  .main-review__item-two div p {
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 1202px) and (max-width: 1919px) {
+ .header {
+    max-width: 1919px;
+  }
+
+  .header-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1919px;
+  }
+
+  .logo-menu-button {
+    padding-top: 11px;
+    
+    padding-left: 73px;
+    padding-right: 73px;
+  }
+
+  .logo {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 59px;
+  }
+
+  .logo-img {
+    width: 318px;
+  }
+
+  .header-menu {
+    display: block;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .header-menu__list {
+    padding: 0;
+  }
+
+  .header-menu__list-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 94px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #A6ABBD;
+  }
+
+   .header-menu__list-item:last-child {
+    margin-right: 0;
+  }
+
+  .header-menu__list-item a {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 24px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #A6ABBD;
+  }
+
+  .header-menu__list-item a:hover,
+  .header-menu__list-item a:focus,
+  .header-menu__list-item a:active {
+    background-color: #00C368;
+    border-radius: 8px;
+    padding: 4px 24px;
+    color: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .header-button {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 24px;
+    background-color: #00C368;
+    border: 1px solid #00C368;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 8px;
+    color: #FFFFFF;
+    float: right;
+    margin-top: 30px;
+  }
+
+  .header-slider {
+    display: none;
+  }
+
+  .header-slider-big {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ffffff;
+    position: relative;
+    max-width: 1919px;
+    padding-top: 35px;
+  }
+
+  .header-slider-big::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+  }
+
+  .header-big__img {
+    width: 436px;
+    margin-bottom: 157px;
+    margin-top: 292px;
+  }
+
+  .header-big__title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #2E3A59;
+    font-family: "Roboto";
+  }
+
+  .header-big__title:before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 22px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 22px;
+  }
+
+  .header-slider__item-1 {
+    position: absolute;
+    top: 7%;
+    left: 35%;
+  }
+
+  .header-slider__item-2 {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+  }
+
+  .header-slider__item-3 {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+  }
+
+  .header-slider__item-4 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+  }
+
+  .header-slider__item-5 {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+  }
+
+  .header-slider__item-6 {
+    position: absolute;
+    top: 27%;
+    left: 25%;
+  }
+ 
+  .header-slider__img {
+    width: 64px;
+    margin-bottom: 10px;
+  }
+
+  .header-slider__desc {
+    width: 176px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+
+  .main-container {
+    display: block;
+    max-width: 1919px;
+    font-size: 0;
+  }
+
+  .main-faq {
+    background-color: #F8FBFF;
+    width: 50%;
+    padding: 20px 18px 29px 18px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+    float: right;
+  }
+
+  .main-faq__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-faq__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+
+  .main-faq__list {
+    padding-left: 105px;
+  }
+
+
+  .main-faq-1::before {
+    content: "";
+    background-image: url('../images/main-faq-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .main-faq-2::before {
+    content: "";
+    display: block;
+    background-image: url('../images/main-faq-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+
+  .main-faq-3::before {
+    content: "";
+    display: block;
+    background-image: url('../images/main-faq-3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+
+  .main-faq-4::before {
+    content: "";
+    background-image: url('../images/main-faq-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+
+  .main-faq-5::before {
+    content: "";
+    display: block;
+    background-image: url('../images/main-faq-5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+
+  .main-faq__list-item {
+    list-style-type: none;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .main-faq__list-item::after {
+    content: "";
+    display: block;
+    width: 504px;
+    height: 1px;
+    background-color: #E7EBF0;
+    margin-top: 17px;
+  }
+
+  .main-faq__list-item:last-child::after {
+    content: "";
+    display: none;
+  }
+
+  .main-faq__list-header {
+   display: block;
+   width: 100%;
+   vertical-align: middle;
+  }
+
+  .main-faq__list-header p {
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 369px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .main-faq__list-header svg {
+    display: inline-block;
+    width: 19px;
+    vertical-align: middle;
+  }
+
+  .main-faq__list-header p:hover,
+  .main-faq__list-header p:focus {
+    color: #00C368;
+  }
+
+
+ .main-faq__list-item.is-opened .faq__list-item-close {
+   -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
+
+ .main-faq__list-content {
+    display: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #2E3A59;
+    width: 369px;
+    line-height: 18px;
+    padding-left: 50px;
+ }
+
+  .main-review {
+    background-color: #F5F5F5;
+    width: 50%;
+    padding: 20px 18px 29px 18px; 
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  .main-review__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .main-review__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-review__item-big {
+    padding: 0 0 0 66px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+
+  .main-review__item-big img {
+    width: 187px;
+    display: inline-block;
+    margin-right: 41px;
+    vertical-align: top;
+  }
+
+  .main-review__big-desc {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .main-review__big-name {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 220px;
+  }
+
+  .main-review__quote-up {
+    position: absolute;
+    top: 6%;
+    left: 231px;
+    display: block;
+    width: 40px;
+    height: 26px;
+  }
+
+ .main-review__quote-down {
+    position: absolute;
+    bottom: 6%;
+    right: 0;
+    fill: #00C368;
+  }
+
+  .main-review__item {
+    width: 100%;
+    margin-top: 35px;
+    display: inline-block;
+    padding-left: 73px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .main-review__item-one {
+    width: 45%;
+    padding-left: 5px;
+    display: inline-block;
+  }
+
+  .main-review__item-one img {
+    display: inline-block;
+    width: 97px;
+    margin-top: 0;
+    margin-right: 20px;
+    float: right;
+    margin-top: 15px;
+  }
+
+  .main-review__item-one div {
+    display: inline-block;
+    width: 50%;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__bold {
+     font-weight: 700;
+  }
+
+  .main-review__item-two {
+    width: 45%;
+    margin-left: 5px;
+    display: inline-block;
+  }
+
+  .main-review__item-two  img {
+    display: inline-block;
+    width: 97px;
+    margin-top: 0;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+
+  .main-review__item-two div {
+    display: inline-block;
+    width: 50%;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__item-two div p {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1920px){
+  .header {
+    width: 1920px;
+  }
+
+  .header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1920px;
+  }
+
+  .logo-menu-button {
+    padding-top: 11px;
+    
+    padding-left: 73px;
+    padding-right: 73px;
+  }
+
+  .logo {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 59px;
+  }
+
+  .logo-img {
+    width: 318px;
+  }
+
+  .header-menu {
+    display: block;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .header-menu__list {
+    padding: 0;
+  }
+
+  .header-menu__list-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 94px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #A6ABBD;
+  }
+
+   .header-menu__list-item:last-child {
+    margin-right: 0;
+  }
+
+  .header-menu__list-item a {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 24px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #A6ABBD;
+  }
+
+  .header-menu__list-item a:hover,
+  .header-menu__list-item a:focus,
+  .header-menu__list-item a:active {
+    background-color: #00C368;
+    border-radius: 8px;
+    padding: 4px 24px;
+    color: #FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .header-button {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 24px;
+    background-color: #00C368;
+    border: 1px solid #00C368;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 8px;
+    color: #FFFFFF;
+    float: right;
+    margin-top: 30px;
+  }
+
+  .header-slider {
+    display: none;
+  }
+
+  .header-slider-big {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ffffff;
+    position: relative;
+    max-width: 1920px;
+    padding-top: 35px;
+  }
+
+  .header-slider-big::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+  }
+
+  .header-big__img {
+    width: 436px;
+    margin-bottom: 157px;
+    margin-top: 292px;
+  }
+
+  .header-big__title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #2E3A59;
+    font-family: "Roboto";
+  }
+
+  .header-big__title:before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 22px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 22px;
+  }
+
+  .header-slider__item-1 {
+    position: absolute;
+    top: 7%;
+    left: 35%;
+  }
+
+  .header-slider__item-2 {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+  }
+
+  .header-slider__item-3 {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+  }
+
+  .header-slider__item-4 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+  }
+
+  .header-slider__item-5 {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+  }
+
+  .header-slider__item-6 {
+    position: absolute;
+    top: 27%;
+    left: 25%;
+  }
+ 
+  .header-slider__img {
+    width: 64px;
+    margin-bottom: 10px;
+  }
+
+  .header-slider__desc {
+    width: 176px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+
+  .main-container {
+    display: block;
+    width: 1920px;
+    font-size: 0;
+    background-color: #F8FBFF;
+  }
+
+  .main-faq {
+    background-color: #F8FBFF;
+    width: 50%;
+    padding: 20px 18px 29px 18px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+    float: right;
+  }
+
+  .main-faq__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .main-faq__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-faq__desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+
+  .main-faq__list {
+    padding-left: 105px;
+  }
+
+
+  .main-faq-1::before {
+    content: "";
+    background-image: url('../images/main-faq-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .main-faq-2::before {
+    content: "";
+    display: block;
+    background-image: url('../images/main-faq-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+
+  .main-faq-3::before {
+    content: "";
+    display: block;
+    background-image: url('../images/main-faq-3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+
+  .main-faq-4::before {
+    content: "";
+    background-image: url('../images/main-faq-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+
+  .main-faq-5::before {
+    content: "";
+    display: block;
+    background-image: url('../images/main-faq-5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+
+  .main-faq__list-item {
+    list-style-type: none;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .main-faq__list-item::after {
+    content: "";
+    display: block;
+    width: 504px;
+    height: 1px;
+    background-color: #E7EBF0;
+    margin-top: 17px;
+  }
+
+  .main-faq__list-item:last-child::after {
+    content: "";
+    display: none;
+  }
+
+  .main-faq__list-header {
+   display: block;
+   width: 100%;
+   vertical-align: middle;
+  }
+
+  .main-faq__list-header p {
+    display: inline-block;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2E3A59;
+    width: 369px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .main-faq__list-header svg {
+    display: inline-block;
+    width: 19px;
+    vertical-align: middle;
+  }
+
+  .main-faq__list-header p:hover,
+  .main-faq__list-header p:focus {
+    color: #00C368;
+  }
+
+
+ .main-faq__list-item.is-opened .faq__list-item-close {
+   -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
+
+ .main-faq__list-content {
+    display: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #2E3A59;
+    width: 369px;
+    line-height: 18px;
+    padding-left: 50px;
+ }
+
+  .main-review {
+    background-color: #F5F5F5;
+    width: 46%;
+    padding: 20px 18px 29px 18px; 
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  .main-review__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .main-review__title::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 4px;
+    background-color: #00C368;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-review__item-big {
+    padding: 0 0 0 66px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+
+  .main-review__item-big img {
+    width: 187px;
+    display: inline-block;
+    margin-right: 41px;
+    vertical-align: top;
+  }
+
+  .main-review__big-desc {
+    width: 489px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .main-review__big-name {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 220px;
+  }
+
+  .main-review__quote-up {
+    position: absolute;
+    top: 6%;
+    left: 31%;
+    display: block;
+    width: 40px;
+    height: 26px;
+  }
+
+ .main-review__quote-down {
+    position: absolute;
+    bottom: 6%;
+    right: -5%;
+    fill: #00C368;
+  }
+
+  .main-review__item {
+    width: 100%;
+    margin-top: 35px;
+    display: inline-block;
+    padding-left: 73px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .main-review__item-one {
+    width: 45%;
+    padding-left: 5px;
+    display: inline-block;
+  }
+
+  .main-review__item-one img {
+    display: inline-block;
+    width: 97px;
+    margin-top: 0;
+    margin-right: 20px;
+    float: right;
+    margin-top: 15px;
+  }
+
+  .main-review__item-one div {
+    display: inline-block;
+    width: 230px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__bold {
+     font-weight: 700;
+  }
+
+  .main-review__item-two {
+    width: 45%;
+    margin-left: 5px;
+    display: inline-block;
+  }
+
+  .main-review__item-two  img {
+    display: inline-block;
+    width: 97px;
+    margin-top: 0;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+
+  .main-review__item-two div {
+    display: inline-block;
+    width: 230px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-review__item-two div p {
+    margin-top: 0;
+  }
+}
+
+
